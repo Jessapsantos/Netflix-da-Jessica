@@ -35,4 +35,4 @@ Atualmente, **a responsividade ainda está em desenvolvimento** 📱💻.
 
 ## ✍️ Autor
 
-Feito com 💻 e muita dedicação por [Jessica]([https://github.com/Jessapsanto])
+Feito com 💻 e muita dedicação por [Jessica](https://github.com/Jessapsantos)
