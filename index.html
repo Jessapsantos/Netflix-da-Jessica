@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix da Jessica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="conteudoheader">
+            <div class="logoCategorias">
+                <img class="logoNetflix" src="./assets/NetflixLogo.png" alt="logo-netflix">
+                <img class="logoN" src="./assets/logoN.png" alt="">
+                <div class="navegar">
+                    <button class="menu-toggle" aria-label="Abrir menu">Navegar</button>
+                    <img class="seta" src="./assets/arrow-point-to-down.png" alt="seta">
+                </div>
+                <ul class="menu">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">Minha lista</a></li>
+                </ul>
+            </div>
+
+            <div class="searchUsuario">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="buscar ..." />
+                    <i class="fa-solid fa-magnifying-glass icon-lupa"></i>
+                </div>
+                <i class="fa-regular fa-bell"></i>
+                <div class="usuario">
+                    <img class="usuario-foto" src="./assets/bean.png" alt="usuario-Jessica">
+                    <img class="seta" src="./assets/arrow-point-to-down.png" alt="seta">
+                    <div class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><img class="usuarios" src="./assets/1743538288178.jpg - Copia.jpg" alt="Julia"><a href="#">Bolinha</a></li>
+                            <li><img class="usuarios" src="./assets/iconeperfil.png" alt="Julia"><a href="#">Julia</a></li>
+                            <li><img class="usuarios" src="./assets/iconeperfil2.png" alt="Nathalia"><a href="#">Nathalia</a></li>
+                            <hr>
+                            <li class="sair"><a href="#">Sair da Netflix</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="conteudo-serie">
+                <!--<img class="logo-strangerthings" src="./assets/Photoroom.png" alt="">-->
+                <p class="legenda">Quando um garoto desaparece, a cidade toda participa nas buscas. <br>Mas o que encontram são segredos, forças sobrenaturais e uma menina.</p>
+                <div class="button">
+                    <button class="assistir"><img src="./assets/play.png" alt="play"> Assistir</button>
+                    <button class="informacoes"> <img src="./assets/mono-icons_circle-information.png" alt="informações"> Mais informações</button>
+                </div>
+            </div>
+
+            <div class="classificação">
+                <div class="quadrado"></div>
+                <div class="imagem-a16">
+                    <img class="A16" src="./assets/NR16-AUTO.jpg" alt="A16">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <section class="cards-carrossel">
+        <h2 class="titulo-cards">Séries que dão razão pra não sair de Casa</h2>
+
+        <div class="carrossel-container">
+          <button class="setaCard esquerda" onclick="moverCarrossel(-1, 'carrossel1')"><span class="icone-seta">&#10094;</span></button>
+          <div class="carrossel" id="carrossel1">
+            <div class="card" style="background-image: url('https://oespecialista.com.br/wp-content/uploads/2021/10/squid-game-round-6-netflix.jpg')"></div>
+            <div class="card" style="background-image: url('https://www.mamawbarcelonie.pl/wp-content/uploads/2020/04/La-casa-de-papel-temporada-4.png')"></div>
+            <div class="card" style="background-image: url('https://vader.news/__export/1641265314063/sites/gadgets/img/2022/01/03/the_witcher1_asx_es_como_se_verxan_realmente_los_personajes_originales_de_netflix.jpg_722016383.jpg')"></div>
+            <div class="card" style="background-image: url('https://alemdatocadocoelho.wordpress.com/wp-content/uploads/2020/02/voce-capa.jpg')"></div>
+            <div class="card" style="background-image: url('https://ntvb.tmsimg.com/assets/p18974714_b_h10_ao.jpg?w=960&h=540')"></div>
+            <div class="card" style="background-image: url('https://tm.ibxk.com.br/sites/6/2021/05/609aebb2ec664.jpg')"></div>
+            <div class="card" style="background-image: url('https://vl-media.fr/wp-content/uploads/2022/09/thecrown_cover-1140x675.jpg')"></div>
+            <div class="card" style="background-image: url('https://ntvb.tmsimg.com/assets/p14652182_b_h10_aa.jpg?w=960&h=540')"></div>
+            <div class="card" style="background-image: url('https://i0.wp.com/geekpopnews.com.br/wp-content/uploads/2021/09/sex-education.png?resize=1200%2C640&ssl=1')"></div>
+            <div class="card" style="background-image: url('https://escotilha.com.br/wp-content/uploads/2015/11/serie-narcos-netflix-primeira-temporada-resenha-critica-750x375.jpeg')"></div>
+            <div class="card" style="background-image: url('https://img.odcdn.com.br/wp-content/uploads/2024/02/The-Umbrella-Academy-1.jpg')"></div>
+            <div class="card" style="background-image: url('https://i.ytimg.com/vi/KoD1DaIlUng/maxresdefault.jpg')"></div>
+          </div>
+          <button class="setaCard direita" onclick="moverCarrossel(1, 'carrossel1')"><span class="icone-seta">&#10095;</span></button>
+        </div>
+
+        <h2 class="titulo-cards">Cineminha? Só se for agora!</h2>
+
+        <div class="carrossel-container">
+          <button class="setaCard esquerda" onclick="moverCarrossel(-1, 'carrossel2')"><span class="icone-seta">&#10094;</span></button>
+          <div class="carrossel" id="carrossel2">
+            <div class="card" style="background-image: url('https://blogs.uai.com.br/opipoqueiro/wp-content/uploads/sites/54/2021/11/Alerta-Vermelho-01.jpg')"></div>
+            <div class="card" style="background-image: url('https://ntvb.tmsimg.com/assets/p16169325_v_h8_ab.jpg?w=960&h=540')"></div>
+            <div class="card" style="background-image: url('https://i.ytimg.com/vi/KXstyx2uzUY/maxresdefault.jpg')"></div>
+            <div class="card" style="background-image: url('https://kapoow.gamehall.com.br/wp-content/uploads/2020/10/Enola-Holmes-Principal-1.jpg')"></div>
+            <div class="card" style="background-image: url('https://i.ytimg.com/vi/_iEHOuPsRsY/maxresdefault.jpg')"></div>
+            <div class="card" style="background-image: url('https://i.ytimg.com/vi/hR0WZvE-pBA/maxresdefault.jpg')"></div>
+            <div class="card" style="background-image: url('https://wp.ufpel.edu.br/empauta/files/2023/04/IMAGEM-1-POSTER.jpeg')"></div>
+            <div class="card" style="background-image: url('https://www.internerdz.com.br/wp-content/uploads/2021/11/naoolheparacima.jpg')"></div>
+            <div class="card" style="background-image: url('https://occ-0-1723-1722.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeeIuyB-4uutZgeVFeS1wnulbHu5GMxVSISOGxnp1BWIlxtXa2WAQVR-vTjTtyz54u7OgKoM12ynjWeKraCCK4X_j9qSWR4ud-sCUu56DUoFnv3cHTL-WTEZhOeutBtzbqHDAQ.jpg?r=794')"></div>
+            <div class="card" style="background-image: url('https://i0.wp.com/br.nacaodamusica.com/wp-content/uploads/2020/04/Milagre-na-cela-7.jpg')"></div>
+            <div class="card" style="background-image: url('https://noset.com.br/wp-content/uploads/2020/07/facas-e-segredos-5.jpg')"></div>
+            <div class="card" style="background-image: url('https://i.ytimg.com/vi/Rhv2kFF6yTA/maxresdefault.jpg')"></div>
+          </div>
+          <button class="setaCard direita" onclick="moverCarrossel(1, 'carrossel2')"><span class="icone-seta">&#10095;</span></button>
+        </div>
+
+        <h2 class="titulo-cards">Recomendados pela Jess 😎</h2>
+
+        <div class="carrossel-container">
+            <button class="setaCard esquerda" onclick="moverCarrossel(-1, 'carrosseltop')"><span class="icone-seta">&#10094;</span></button>
+            <div class="carrosseltop" id="carrosseltop">
+              <div class="card10" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMq1hLdxzawiB9Jg_JrK1Ys9OudR6Fk-mlid0f9cpikpjzqldF1ZyRngIcXjtoIt8az4A&usqp=CAU')"><img class="img-top1" src="./assets/1.png" alt="numeroum"></div>
+              <div class="card10" style="background-image: url('https://img-cdn.sfanytime.com/COVERM/3bb265a7-d036-46f6-ab2d-a39a011dcbb1_COVERM_01.jpg?w=375&fm=pjpg&s=86a6f770acdac30746fe3fc29abeaf60')"><img class="img-top" src="./assets/2.png" alt="numerodois"></div>
+              <div class="card10" style="background-image: url('https://images.justwatch.com/poster/174596723/s718/peaky-blinders.jpg')"><img class="img-top" src="./assets/3.png" alt="numerodois"></div>
+              <div class="card10" style="background-image: url('https://resizing.flixster.com/VqmqWw0Qh1yi-7j8jU0U7Iwqyk0=/fit-in/705x460/v2/https://resizing.flixster.com/JysRb3DWAU1VI5ywAvY4JwgiWZ0=/ems.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvUlRUVjg3MDUxNi53ZWJw')"><img class="img-top" src="./assets/4.png" alt="numerodois"></div>
+              <div class="card10" style="background-image: url('https://upload.wikimedia.org/wikipedia/pt/2/2b/Adolescence_2025.jpg')"><img class="img-top" src="./assets/5.png" alt="numerodois"></div>
+              <div class="card10" style="background-image: url('https://cdn.fstatic.com/media/movies/covers/2017/08/anne-with-an-e-poster.jpg')"><img class="img-top" src="./assets/6.png" alt="numerodois"></div>
+              <div class="card10" style="background-image: url('https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/18ad0649-f2dd-410d-8842-2ba2aa486fdb/e151e039-85d0-4c2a-a581-015fa2c10739?host=wbd-images.prod-vod.h264.io&partner=beamcom')"><img class="img-top" src="./assets/4.png" alt="numerodois"></div>
+              <div class="card10" style="background-image: url('https://m.media-amazon.com/images/S/pv-target-images/1d2ddeb8df063fea24e79a8126f5a4975ad7931ba67eedee65cc199605c19d6e.jpg')"><img class="img-top" src="./assets/4.png" alt="numerodois"></div>
+              <div class="card10" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdsq1DVK_B-ETUJXKnSm0jnybJTgv9Rs8em5i5A6eziyuIU_XpJ2V94VIb-EolTIPUYH4xMW4nyl6vOcATyZkQ9wVhNaHAAdCE76EA-ooiXD6XBT79x0Y-x2Q8ESbO25F6cY.jpg?r=a66')"><img class="img-top" src="./assets/4.png" alt="numerodois"></div>
+              <div class="card10" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABduJ_xZz3tJGqqoDDUuTNfTXipAjBXxLpIQTgyhhOxBq9Z3li3fRIO8taE4onElOwwqnbZcO9kdTLia4f1Vhy15QyaYpRuY1c4rJ8greFx_A6RFtOg4xVfCR6zUSteZcRWhZ.jpg?r=9e5')"><img class="img-top" src="./assets/4.png" alt="numerodois"></div>
+            </div>  
+            <button class="setaCard direita" onclick="moverCarrossel(1, 'carrosseltop')"><span class="icone-seta">&#10095;</span></button>
+        </div>
+
+        <h2 class="titulo-cards">Não era amor, era Dorama</h2>
+
+        <div class="carrossel-container">
+          <button class="setaCard esquerda" onclick="moverCarrossel(-1, 'carrossel3')"><span class="icone-seta">&#10094;</span></button>
+          <div class="carrossel" id="carrossel3">
+            <div class="card" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeITsa4rf0rg1ViMi1bmOGKKS3XBXQSqBwlAprgWvPmRb3IJ5mk15GLkWA8-04V3PqfFaIrTp3Ea5f2qhCoH8AgxSaXK6MuqGCACtT4IpKQ22N0ViYR9GRQQm8lKVsupkXtD.jpg?r=1cd')"></div>
+            <div class="card" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABRTGjMpGgpZOlKAdyE7cjiCoJphVLgqz9-I83Ef6bHEjS86u8BdGxXNi5HEiHiTILz3g5fkC4mPYdjDuwiiYFQ36ugG9xC07bVQ0GyJl985NTF4dsLsu-LM-B0W1H4e8Q7-v.jpg?r=38d')"></div>
+            <div class="card" style="background-image: url('https://occ-0-8407-92.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABX2Y6v9NZP1M_hXEEWnlmZUMkxyYZH4agKPVkNpH_8x_kxq81S30-po4hvDn1YQke1DADtP3mg3RAFAUwWB3joL57oM4oH6Op50vkff4YVItTmur9zP4Xt9BZnv2P5ku3Oyhog.jpg?r=403')"></div>
+            <div class="card" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABQSo5_MEuqZ4FwSOwd6Tc8_7Q4v2bur0r4YdsiUeeSCMeHT6n0x9FEX8-f351tJF8ZPmoaf-nlYBx4EAqbH3mhBpz5jqU6qa32VBP335M89h7dCjDLtvtKNRF9uLZsiD6-dS.jpg?r=fdc')"></div>
+            <div class="card" style="background-image: url('https://minhaseriefavorita.com.br/wp-content/uploads/2024/06/ate_que-as-cores-acabem.png')"></div>
+            <div class="card" style="background-image: url('https://resizing.flixster.com/KiXh2SnIoPfPsEhJCw0dm7Z4syU=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p23888235_b_h8_aa.jpg')"></div>
+            <div class="card" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABVwe7sW2lQ7I5xlp1NYeTuKjSndKClm7KnQK-1qWyDajvTWhe9OJjy0JR30ScCcNEiBe6qTo65xw0v6BPNH50cCutsXrDmn58crKiiDTjWHaWx9YITg9UXvxo5MXTeP2GD7n.jpg?r=6eb')"></div>
+            <div class="card" style="background-image: url('https://minhaseriefavorita.com.br/wp-content/uploads/2025/01/o-amor-mora-ao_lado.png')"></div>
+            <div class="card" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABX022OEvL2TaT-q9QgCDdRFrVItaEBnCRH0ehq1Tb4wBKiPwIvtMtsaesX53VCTQRBe9tpgw7cCn9-pfvLuC9kAr72F_HICRKLRxS7dLD89NljpX6eJdzU9V0mdibVIONMlM.jpg?r=d70')"></div>
+            <div class="card" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZyMhLQbo_rtBjDtXAnEwqEjHX3jJhMMrmDgpxWinTtWQfW78gKSjc4BvM-GKRa9N--yuIFc96ISAyxat8z7hV7lGuzpU8v3LCMBpksPl_QoZsX1hGYkOzbz3EAcPOf4M8om.jpg?r=22b')"></div>
+            <div class="card" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUd9aDdaaHkCX0brcfJpwgvs3KoDg-hgbLNYJ8uNMK3Oi9bxtrW_pMxJmdIUMOlPXlQOlaRGg-9ZjWNWGR4YemwsbJ7yX-rdkEp-xq5SiMIon85Z-uVcaINUcCAvgScp5SBr.jpg?r=b1a')"></div>
+            <div class="card" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABUY6c_c3QHHYZkqYRB4ojhdbMYGkrMQcg8EId5DgyK4iHwKy6iZZFJY0AwjNK_e07qqS0dxWev8mcbN4-fA3b6ngOg2JRLfExwC8ve051NxJWgNuyCuJ0b7LqyyR5Ak6eA54.jpg?r=233')"></div>
+          </div>
+          <button class="setaCard direita" onclick="moverCarrossel(1, 'carrossel3')"><span class="icone-seta">&#10095;</span></button>
+        </div>
+
+        <h2 class="titulo-cards">Meus desenhos, minhas regras!</h2>
+
+        <div class="carrossel-container">
+          <button class="setaCard esquerda" onclick="moverCarrossel(-1, 'carrossel4')"><span class="icone-seta">&#10094;</span></button>
+          <div class="carrossel" id="carrossel4">
+                <div class="card" style="background-image: url('https://i.ytimg.com/vi/Dkgw8A-XiO0/maxresdefault.jpg')"></div>
+                <div class="card" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdHrUxCKFq0w9EC9uVgQZF2bA8HPWsAnWoOwCv7yGdGjhoLtCt4gj-752nIOH42fD9kufWo5aSXMVzX4shM-zV_lDjyJ-VE4znU.webp?r=c12')"></div>
+                <div class="card" style="background-image: url('https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/6237f381-2ab7-41ca-8e73-e177033de02f/bf2f7417-b348-11ef-9fed-0affd17b6387?host=wbd-images.prod-vod.h264.io&partner=beamcom')"></div>
+                <div class="card" style="background-image: url('https://m.media-amazon.com/images/S/pv-target-images/14cf34c45afb0aa0de297e6b6b2f6bd5d6f415798cad130c0dce449e3afc3138.jpg')"></div>
+                <div class="card" style="background-image: url('https://m.media-amazon.com/images/S/pv-target-images/5a5cf867eb9d4fc1e5d44fa81bca4ced972e299967c7d040f5ff49fef7b49b51.jpg')"></div>
+                <div class="card" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABfhCaBxpoLKxMDNg1Cqw60_Ki0yTyL47GeKQXUfobBUEE5Of4Eysql4CdbVzDjuNcVloZRPaVZhNlheeMammGExX43ntPaqjKjQ.webp?r=0b9')"></div>
+                <div class="card" style="background-image: url('https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/18ad0649-f2dd-410d-8842-2ba2aa486fdb/e151e039-85d0-4c2a-a581-015fa2c10739?host=wbd-images.prod-vod.h264.io&partner=beamcom')"></div>
+                <div class="card" style="background-image: url('https://m.media-amazon.com/images/S/pv-target-images/1d2ddeb8df063fea24e79a8126f5a4975ad7931ba67eedee65cc199605c19d6e.jpg')"></div>
+                <div class="card" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdsq1DVK_B-ETUJXKnSm0jnybJTgv9Rs8em5i5A6eziyuIU_XpJ2V94VIb-EolTIPUYH4xMW4nyl6vOcATyZkQ9wVhNaHAAdCE76EA-ooiXD6XBT79x0Y-x2Q8ESbO25F6cY.jpg?r=a66')"></div>
+                <div class="card" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABduJ_xZz3tJGqqoDDUuTNfTXipAjBXxLpIQTgyhhOxBq9Z3li3fRIO8taE4onElOwwqnbZcO9kdTLia4f1Vhy15QyaYpRuY1c4rJ8greFx_A6RFtOg4xVfCR6zUSteZcRWhZ.jpg?r=9e5')"></div>
+                <div class="card" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABYLpB25nHfSgwdz3RnvwS7TYBvTAfp8JjArAnMEL_9T5Xnfq1cJ5cnAuS0J-ILKP7xErDQ284-VEvIt84jzecx91fcwkmWSkGoAOTbQxHogNsbWmD2Ogxvc1NbXq6TDElWo6.jpg?r=138')"></div>
+                <div class="card" style="background-image: url('https://occ-0-3578-1123.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABSWrTlvcVBRZTIzm9aWtVLtQPz4NPIGrOHO1wpYv_gZKuWWzOKksizDfWF6oJa_ytLOyI10K_7qs-6D7OWg4OReREOvG8s8YGBw.webp?r=33f')"></div>
+          </div>
+          <button class="setaCard direita" onclick="moverCarrossel(1, 'carrossel4')"><span class="icone-seta">&#10095;</span></button>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="redes">
+            <a href="https://www.instagram.com/jess.apsantos/">
+            <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jessica-apasantos-710b86223/">
+            <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Jessapsantos">
+            <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <p>Desenvolvido por Jessica © 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

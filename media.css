@@ -1,0 +1,94 @@
+@media screen and (max-width: 1024px) {
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        height: 50vh;
+        background-color: var(--background-color);
+        background-image: url(./assets/502.jpeg);    
+        background-repeat: no-repeat;
+    }
+    
+    body::after {
+        content: "";
+        position: absolute;
+        bottom: -10px; /* "vaza" o degradê pra baixo */
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--background-color) 90%);
+        z-index: 5000;
+    }
+
+    .conteudoheader {
+        padding: 0.625em 2em;
+    }
+
+    main {
+        width: 100%;
+        background-image: url('./assets/Photoroom.png');
+        background-repeat: no-repeat;
+        background-position: 2em 12.5em;
+        background-size: 40%;
+    }
+
+    .conteudo-serie {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding: 17rem 2rem 1.875em;
+        gap: 1.5625em;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        background-color: #222;
+        padding: 10px;
+        border-radius: 5px;
+        width: max-content;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .navegar {
+        display: flex;
+    }
+
+    /* Esconde o menu horizontal no mobile */
+    .logoCategorias > ul {
+        display: none;
+    }
+
+    .titulo-cards {
+        padding: 0 2em 0;
+    }
+    
+    .carrossel-container {
+        padding:  0.625em 2em;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    body {
+        height: 50vh;
+        background-color: var(--background-color);
+        background-image: url(./assets/502.jpeg);    
+        background-repeat: no-repeat;
+    }
+    
+    .logoNetflix {
+        display: none;
+    }
+
+    .logoN {
+        display: flex;
+    }
+}
